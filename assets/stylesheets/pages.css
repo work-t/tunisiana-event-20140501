@@ -1,0 +1,158 @@
+/*
+ * Pahe de jeux
+ */
+ 
+/* Main content area */
+
+#content {
+  margin: 80px 70px 10px 70px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Header/footer boxes */
+
+.wideBox {
+  clear: both;
+  text-align: center;
+  margin: 70px;
+  padding: 10px;
+  background: #ebedf2;
+  border: 1px solid #333;
+}
+
+.wideBox h1 {
+  font-weight: bold;
+  margin: 20px;
+  color: #666;
+  font-size: 1.5em;
+}
+
+/* Slots for final card positions */
+
+#cardSlots {
+  margin: 50px auto 0 auto;
+}
+
+/* The initial pile of unsorted cards */
+
+#cardPile {
+  margin: 0 auto;
+}
+
+#cardSlots, #cardPile {
+  width: 788px;
+  height: 120px;
+  padding: 20px;
+  border: 0;
+}
+
+/* Individual cards and slots */
+
+#cardSlots div, #cardPile div {
+  float: left;
+	width: 50px;
+	height: 50px;
+	padding: 20px;
+	border: 2px solid #ed1c24;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 10px 0 10px;
+	background: #FFF;
+    overflow: hidden;
+    text-indent: -5500px;
+}
+#cardPile .card-1{
+    background:#E3001B url(../images/ooredoo/l-01.svg) 50% 50% no-repeat;
+    background-size:100% 100%;
+}
+#cardPile .card-2{
+    background:#E3001B url(../images/ooredoo/l-02.svg) 50% 50% no-repeat;
+    background-size:100% 100%;
+}
+#cardPile .card-3{
+    background:#E3001B url(../images/ooredoo/l-03.svg) 50% 50% no-repeat;
+    background-size:100% 100%;
+}
+#cardPile .card-4{
+    background:#E3001B url(../images/ooredoo/l-04.svg) 50% 50% no-repeat;
+    background-size:100% 100%;
+}
+#cardPile .card-5{
+    background:#E3001B url(../images/ooredoo/l-05.svg) 50% 50% no-repeat;
+    background-size:100% 100%;
+}
+#cardPile .card-6{
+    background:#E3001B url(../images/ooredoo/l-06.svg) 50% 50% no-repeat;
+    background-size:100% 100%;
+}
+#cardPile .card-7{
+    background:#E3001B url(../images/ooredoo/l-07.svg) 50% 50% no-repeat;
+    background-size:100% 100%;
+}
+
+#cardSlots div:first-child, #cardPile div:first-child {
+  margin-left: 0;
+}
+
+#cardSlots div.hovered {
+  background: #aaa;
+}
+
+#cardSlots div {
+  border-style: dashed;
+}
+
+#cardPile div {
+  background: #666;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 0 0 3px #000;
+}
+
+#cardPile div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+/* Individually coloured cards */
+
+/*#card1.correct { background: red; }
+#card2.correct { background: brown; }
+#card3.correct { background: orange; }
+#card4.correct { background: yellow; }
+#card5.correct { background: green; }
+#card6.correct { background: cyan; }
+#card7.correct { background: blue; }
+#card8.correct { background: indigo; }
+#card9.correct { background: purple; }
+#card10.correct { background: violet; }*/
+
+
+/* "You did it!" message */
+#successMessage {
+  position: absolute;
+  left: 580px;
+  top: 250px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  background: #dfd;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
+}
+
+
+#zone_chat{
+    display: none !important;
+}

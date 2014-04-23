@@ -1,0 +1,32 @@
+/* Portrait */
+@media screen and (orientation:portrait) {
+    /* Portrait styles */
+    .frame .slogan{
+		/*For Large*/
+		width:100%;
+	}
+	.frame .slogan img{
+		max-height:100%;
+	}
+	.bg-tunisiana-event{
+		background-size: auto 100%;
+	}
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+	.bg-tunisiana-event{
+		background-size: 100% auto;
+	}
+    .frame .slogan{
+		/*For Large*/
+		width:70%;
+	}
+	.frame .slogan img{
+		max-height:60%;
+	}
+	.quizResults .quizLevel .res{
+		background-position: 50% 30%;
+		padding-top: 50%;
+		background-size: 430px auto;
+	}
+}
