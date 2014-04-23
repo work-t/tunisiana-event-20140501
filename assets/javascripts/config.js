@@ -15,5 +15,5 @@ var tunisiana = {
 		}
     },
 	grid : [50 ,50],
-	timer : 20
+	timer : 30
 };
