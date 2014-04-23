@@ -91,6 +91,9 @@ client_lose = function (data) {
 client_win = function () {
 	win = true;
 	clock.stop();
+	/*var numbers = new Array('2 DT','3 DT','5 DT');
+	var msg = numbers[Math.floor(Math.random()*numbers.length)];
+	$('.frame-sucess .txt.cadeau').text(msg);*/
 	var path_get_cadeau = location.href + 'DB/get_cadeau.php';
 	$.ajax({
 	   type: "POST",
